@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  cuauv:
+    image: lezed1/cuauv
+    ports:
+      - "2222:22"
+    volumes:
+      - type: bind
+        source: .
+        target: /home/software/cuauv/software
